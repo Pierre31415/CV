@@ -97,7 +97,7 @@ main {
   margin: 2rem auto 0rem auto;
   padding-right: 5rem;
   @include sm {
-    padding-right: 5%;
+    padding-right: 0rem;
   }
 
   .skills {
@@ -183,13 +183,14 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 3rem auto 2rem auto;
+  margin: 3rem 1rem 2rem auto;
+
   h2 {
-    @include sm {
-    }
+    margin: 0rem;
   }
   i {
-    padding: 1.3rem 3rem 0rem 2rem;
+    // padding: 1.3rem 3rem 0rem 2rem;
+    margin: 2px 2rem auto 1rem;
     font-size: 2rem;
   }
 }

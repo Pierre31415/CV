@@ -138,7 +138,7 @@ aside {
 }
 @media (max-width: 767px) {
   aside {
-    padding: 0% 5% 0% 5%;
+    padding: 0% 5%;
   }
 }
 aside .block h3 {
@@ -164,41 +164,36 @@ aside #lonedarkstar {
 
 main {
   grid-area: main;
-  margin: 2rem 5rem 0rem 0rem;
-}
-main h2 {
-  text-align: center;
-  padding-top: 5rem;
+  margin: 2rem auto 0rem auto;
+  padding-right: 5rem;
 }
 @media (max-width: 767px) {
-  main h2 {
-    padding-top: 2rem;
+  main {
+    padding-right: 5%;
   }
-}
-main i {
-  padding-right: 3rem;
 }
 main .skills {
   display: flex;
   flex-direction: row;
   text-align: center;
+  justify-content: space-around;
 }
 main .skills ul {
   text-align: left;
 }
-main .skills .hardskill {
-  width: 50%;
+main .skills .hardSkills {
+  flex: 1;
   border-right: 1px solid var(--border);
 }
-main .skills .softskill {
-  width: 50%;
+main .skills .softSkills {
+  flex: 1;
 }
-main .skills .insideskills {
+main .skills .insideSkills {
   padding-left: 25%;
 }
 @media (max-width: 767px) {
-  main .skills .insideskills {
-    padding: 0% 5% 0% 5%;
+  main .skills .insideSkills {
+    padding-left: 10%;
   }
 }
 main .formations ul {
@@ -210,12 +205,12 @@ main .formations ul {
     padding: 0% 5% 0% 5%;
   }
 }
-main .xppro ul {
+main .xpPro ul {
   padding-left: 10%;
   list-style: none;
 }
 @media (max-width: 767px) {
-  main .xppro ul {
+  main .xpPro ul {
     padding: 0% 5% 0% 5%;
   }
 }
@@ -238,6 +233,30 @@ main .projet div {
   main .projet div {
     padding: 0% 5% 0% 5%;
   }
+}
+
+@media (max-width: 767px) {
+  .certifications {
+    text-align: center;
+  }
+}
+
+.links {
+  color: #007fd4;
+}
+.links:hover {
+  font-weight: bold;
+}
+
+.h2WithIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3rem auto 2rem auto;
+}
+.h2WithIcon i {
+  padding: 1.4rem 3rem 0rem 2rem;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

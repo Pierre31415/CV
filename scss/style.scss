@@ -66,7 +66,7 @@ aside {
   border-right: 1px solid var(--border);
   padding: 5rem;
   @include sm {
-    padding: 0% 5% 0% 5%;
+    padding: 0% 5%;
   }
   .block {
     h3 {
@@ -94,39 +94,33 @@ aside {
 
 main {
   grid-area: main;
-  margin: 2rem 5rem 0rem 0rem;
-  h2 {
-    text-align: center;
-    padding-top: 5rem;
-    @include sm {
-      padding-top: 2rem;
-    }
-  }
-  i {
-    padding-right: 3rem;
+  margin: 2rem auto 0rem auto;
+  padding-right: 5rem;
+  @include sm {
+    padding-right: 5%;
   }
 
   .skills {
     display: flex;
     flex-direction: row;
     text-align: center;
-
+    justify-content: space-around;
     ul {
       text-align: left;
     }
 
-    .hardskill {
-      width: 50%;
+    .hardSkills {
+      flex: 1;
       border-right: 1px solid var(--border);
     }
-    .softskill {
-      width: 50%;
+    .softSkills {
+      flex: 1;
     }
 
-    .insideskills {
+    .insideSkills {
       padding-left: 25%;
       @include sm {
-        padding: 0% 5% 0% 5%;
+        padding-left: 10%;
       }
     }
   }
@@ -141,7 +135,7 @@ main {
     }
   }
 
-  .xppro {
+  .xpPro {
     ul {
       padding-left: 10%;
       list-style: none;
@@ -169,5 +163,33 @@ main {
       }
     }
     padding-bottom: 3rem;
+  }
+}
+
+.certifications {
+  @include sm {
+    text-align: center;
+  }
+}
+
+.links {
+  color: rgb(0, 127, 212);
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+.h2WithIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3rem auto 2rem auto;
+  h2 {
+    @include sm {
+    }
+  }
+  i {
+    padding: 1.4rem 3rem 0rem 2rem;
+    font-size: 2rem;
   }
 }
